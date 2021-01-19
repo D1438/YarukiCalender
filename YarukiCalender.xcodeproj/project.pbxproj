@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		38AAF716258BB433001789E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38AAF714258BB433001789E8 /* LaunchScreen.storyboard */; };
 		38AAF721258BB434001789E8 /* YarukiCalenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AAF720258BB434001789E8 /* YarukiCalenderTests.swift */; };
 		38AAF72C258BB434001789E8 /* YarukiCalenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AAF72B258BB434001789E8 /* YarukiCalenderUITests.swift */; };
+		7D95A4AA7773B1C71A3E74C3 /* Pods_YarukiCalender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC1824C6D142A17732591D6 /* Pods_YarukiCalender.framework */; };
+		BB491BB3AB32EE4A6AE404EA /* Pods_YarukiCalender_YarukiCalenderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F229D6A5F1B20DA61DB90A2B /* Pods_YarukiCalender_YarukiCalenderUITests.framework */; };
+		D07189629288DCDC6E6C8511 /* Pods_YarukiCalenderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE05A371CF7EAA72ED7C3646 /* Pods_YarukiCalenderTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18C3787875FBFAFB830BD4A8 /* Pods-YarukiCalenderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YarukiCalenderTests.debug.xcconfig"; path = "Target Support Files/Pods-YarukiCalenderTests/Pods-YarukiCalenderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		38AAF706258BB431001789E8 /* YarukiCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YarukiCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38AAF709258BB431001789E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38AAF70B258BB431001789E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		38AAF727258BB434001789E8 /* YarukiCalenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YarukiCalenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38AAF72B258BB434001789E8 /* YarukiCalenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YarukiCalenderUITests.swift; sourceTree = "<group>"; };
 		38AAF72D258BB434001789E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC1824C6D142A17732591D6 /* Pods_YarukiCalender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YarukiCalender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADD8C3F8E507F2C2EC28BCB /* Pods-YarukiCalender-YarukiCalenderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YarukiCalender-YarukiCalenderUITests.debug.xcconfig"; path = "Target Support Files/Pods-YarukiCalender-YarukiCalenderUITests/Pods-YarukiCalender-YarukiCalenderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		684BA69EDD735CC96E70D0B0 /* Pods-YarukiCalender-YarukiCalenderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YarukiCalender-YarukiCalenderUITests.release.xcconfig"; path = "Target Support Files/Pods-YarukiCalender-YarukiCalenderUITests/Pods-YarukiCalender-YarukiCalenderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7C32F762E0410E982D21BD2D /* Pods-YarukiCalender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YarukiCalender.release.xcconfig"; path = "Target Support Files/Pods-YarukiCalender/Pods-YarukiCalender.release.xcconfig"; sourceTree = "<group>"; };
+		9A67F293548FBC7DD6164EA6 /* Pods-YarukiCalender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YarukiCalender.debug.xcconfig"; path = "Target Support Files/Pods-YarukiCalender/Pods-YarukiCalender.debug.xcconfig"; sourceTree = "<group>"; };
+		F229D6A5F1B20DA61DB90A2B /* Pods_YarukiCalender_YarukiCalenderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YarukiCalender_YarukiCalenderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3241CF19554CE668BE8EEA /* Pods-YarukiCalenderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YarukiCalenderTests.release.xcconfig"; path = "Target Support Files/Pods-YarukiCalenderTests/Pods-YarukiCalenderTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE05A371CF7EAA72ED7C3646 /* Pods_YarukiCalenderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YarukiCalenderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D95A4AA7773B1C71A3E74C3 /* Pods_YarukiCalender.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07189629288DCDC6E6C8511 /* Pods_YarukiCalenderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB491BB3AB32EE4A6AE404EA /* Pods_YarukiCalender_YarukiCalenderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				38AAF71F258BB434001789E8 /* YarukiCalenderTests */,
 				38AAF72A258BB434001789E8 /* YarukiCalenderUITests */,
 				38AAF707258BB431001789E8 /* Products */,
+				CAF8BC0268478B889FFB783D /* Pods */,
+				FB63A26050C8EB4CDBF0FD2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = YarukiCalenderUITests;
 			sourceTree = "<group>";
 		};
+		CAF8BC0268478B889FFB783D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A67F293548FBC7DD6164EA6 /* Pods-YarukiCalender.debug.xcconfig */,
+				7C32F762E0410E982D21BD2D /* Pods-YarukiCalender.release.xcconfig */,
+				5ADD8C3F8E507F2C2EC28BCB /* Pods-YarukiCalender-YarukiCalenderUITests.debug.xcconfig */,
+				684BA69EDD735CC96E70D0B0 /* Pods-YarukiCalender-YarukiCalenderUITests.release.xcconfig */,
+				18C3787875FBFAFB830BD4A8 /* Pods-YarukiCalenderTests.debug.xcconfig */,
+				FD3241CF19554CE668BE8EEA /* Pods-YarukiCalenderTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB63A26050C8EB4CDBF0FD2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AC1824C6D142A17732591D6 /* Pods_YarukiCalender.framework */,
+				F229D6A5F1B20DA61DB90A2B /* Pods_YarukiCalender_YarukiCalenderUITests.framework */,
+				FE05A371CF7EAA72ED7C3646 /* Pods_YarukiCalenderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38AAF730258BB434001789E8 /* Build configuration list for PBXNativeTarget "YarukiCalender" */;
 			buildPhases = (
+				0501278EA4AD6F4A528C299A /* [CP] Check Pods Manifest.lock */,
 				38AAF702258BB431001789E8 /* Sources */,
 				38AAF703258BB431001789E8 /* Frameworks */,
 				38AAF704258BB431001789E8 /* Resources */,
 				38660EF5258BB59900975CC4 /* ShellScript */,
+				EABE8E2833DAAD757662BB73 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38AAF733258BB434001789E8 /* Build configuration list for PBXNativeTarget "YarukiCalenderTests" */;
 			buildPhases = (
+				DF8CD7544AE0CC57123DC014 /* [CP] Check Pods Manifest.lock */,
 				38AAF718258BB434001789E8 /* Sources */,
 				38AAF719258BB434001789E8 /* Frameworks */,
 				38AAF71A258BB434001789E8 /* Resources */,
@@ -171,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38AAF736258BB434001789E8 /* Build configuration list for PBXNativeTarget "YarukiCalenderUITests" */;
 			buildPhases = (
+				8098D7D9419AB5DFCB940D91 /* [CP] Check Pods Manifest.lock */,
 				38AAF723258BB434001789E8 /* Sources */,
 				38AAF724258BB434001789E8 /* Frameworks */,
 				38AAF725258BB434001789E8 /* Resources */,
+				0A2662EC490856E68B1C5A99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +300,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0501278EA4AD6F4A528C299A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YarukiCalender-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A2662EC490856E68B1C5A99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YarukiCalender-YarukiCalenderUITests/Pods-YarukiCalender-YarukiCalenderUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YarukiCalender-YarukiCalenderUITests/Pods-YarukiCalender-YarukiCalenderUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YarukiCalender-YarukiCalenderUITests/Pods-YarukiCalender-YarukiCalenderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		38660EF5258BB59900975CC4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,6 +355,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		8098D7D9419AB5DFCB940D91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YarukiCalender-YarukiCalenderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF8CD7544AE0CC57123DC014 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YarukiCalenderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EABE8E2833DAAD757662BB73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YarukiCalender/Pods-YarukiCalender-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YarukiCalender/Pods-YarukiCalender-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YarukiCalender/Pods-YarukiCalender-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -454,12 +599,14 @@
 		};
 		38AAF731258BB434001789E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A67F293548FBC7DD6164EA6 /* Pods-YarukiCalender.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JW9RR8FC8;
 				INFOPLIST_FILE = YarukiCalender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,12 +620,14 @@
 		};
 		38AAF732258BB434001789E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C32F762E0410E982D21BD2D /* Pods-YarukiCalender.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JW9RR8FC8;
 				INFOPLIST_FILE = YarukiCalender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,6 +641,7 @@
 		};
 		38AAF734258BB434001789E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C3787875FBFAFB830BD4A8 /* Pods-YarukiCalenderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +664,7 @@
 		};
 		38AAF735258BB434001789E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3241CF19554CE668BE8EEA /* Pods-YarukiCalenderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,6 +687,7 @@
 		};
 		38AAF737258BB434001789E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ADD8C3F8E507F2C2EC28BCB /* Pods-YarukiCalender-YarukiCalenderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -556,6 +708,7 @@
 		};
 		38AAF738258BB434001789E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 684BA69EDD735CC96E70D0B0 /* Pods-YarukiCalender-YarukiCalenderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
