@@ -5,20 +5,32 @@
 //  Created by 石澤大輔 on 2020/12/18.
 //
 
-import FSCalendar
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
 
-    @IBOutlet var calender: FSCalendar!
-    
+    let date = Date()
+    @IBOutlet private weak var collection: UICollectionView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        let today = Calendar.current.startOfDay(for: date)
+
+        print(today)
+
+        collection.dataSource = self
+        collection.delegate = self
     }
 
-    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 18
+    }
 
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "data", for: indexPath)
+        print(indexPath.item)
+        cell.backgroundColor = UIColor.red
+        return cell
     }
 }
