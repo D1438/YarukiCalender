@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		382A4AE425E02969001E3CCF /* CalenderDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A4AE325E02969001E3CCF /* CalenderDateCollectionViewCell.swift */; };
 		38AAF70A258BB431001789E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AAF709258BB431001789E8 /* AppDelegate.swift */; };
 		38AAF70C258BB431001789E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AAF70B258BB431001789E8 /* SceneDelegate.swift */; };
 		38AAF70E258BB431001789E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AAF70D258BB431001789E8 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		18C3787875FBFAFB830BD4A8 /* Pods-YarukiCalenderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YarukiCalenderTests.debug.xcconfig"; path = "Target Support Files/Pods-YarukiCalenderTests/Pods-YarukiCalenderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		382A4AE325E02969001E3CCF /* CalenderDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderDateCollectionViewCell.swift; sourceTree = "<group>"; };
 		38AAF706258BB431001789E8 /* YarukiCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YarukiCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38AAF709258BB431001789E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38AAF70B258BB431001789E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				38AAF712258BB433001789E8 /* Assets.xcassets */,
 				38AAF714258BB433001789E8 /* LaunchScreen.storyboard */,
 				38AAF717258BB433001789E8 /* Info.plist */,
+				382A4AE325E02969001E3CCF /* CalenderDateCollectionViewCell.swift */,
 			);
 			path = YarukiCalender;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			files = (
 				38AAF70E258BB431001789E8 /* ViewController.swift in Sources */,
 				38AAF70A258BB431001789E8 /* AppDelegate.swift in Sources */,
+				382A4AE425E02969001E3CCF /* CalenderDateCollectionViewCell.swift in Sources */,
 				38AAF70C258BB431001789E8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
