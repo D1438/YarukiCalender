@@ -27,20 +27,25 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collection.collectionViewLayout = layout
     }
 
+//    セルの数
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 18
+        return 30
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "data", for: indexPath)
         print(indexPath.item)
         cell.backgroundColor = UIColor.red
+
+        let dateLabel = cell.contentView.viewWithTag(1) as? UILabel
+        dateLabel!.text = "aaaa"
+
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let horizonSpace: CGFloat = 20
-        let cellSize: CGFloat = 20
-        return CGSize(width: horizonSpace, height: cellSize)
+        let horizonSize: CGFloat = 50
+        let cellSize: CGFloat = 50
+        return CGSize(width: horizonSize, height: cellSize)
     }
 }
