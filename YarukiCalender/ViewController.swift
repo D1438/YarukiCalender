@@ -15,6 +15,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.overrideUserInterfaceStyle = .light
+
         displayWidth = UIScreen.main.bounds.width
 
         // Do any additional setup after loading the view.
