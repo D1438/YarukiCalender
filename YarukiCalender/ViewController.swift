@@ -11,9 +11,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     let date = Date()
     @IBOutlet private weak var collection: UICollectionView!
+    var displayWidth: CGFloat = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        displayWidth = UIScreen.main.bounds.width
+
         // Do any additional setup after loading the view.
         let today = Calendar.current.startOfDay(for: date)
 
@@ -23,7 +26,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collection.delegate = self
 
         let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+        layout.sectionInset = UIEdgeInsets(top: 15, left: 10, bottom: 15, right: 10)
+        layout.minimumInteritemSpacing = 0
         collection.collectionViewLayout = layout
     }
 
@@ -44,8 +48,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let horizonSize: CGFloat = 50
-        let cellSize: CGFloat = 50
-        return CGSize(width: horizonSize, height: cellSize)
+        let horizonSize: CGFloat = displayWidth / 7 - 5
+        let verticalSize: CGFloat = 50
+        return CGSize(width: horizonSize, height: verticalSize)
     }
 }
