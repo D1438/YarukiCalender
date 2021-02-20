@@ -33,13 +33,29 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collection.collectionViewLayout = layout
     }
 
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+
 //    セルの数
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+
+        switch (section) {
+        case 0:
+            return 7
+
+        case 1:
+            return 35
+
+        default:
+            print("error")
+            return 0
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "data", for: indexPath)
+        
         print(indexPath.item)
         cell.backgroundColor = UIColor.red
 
