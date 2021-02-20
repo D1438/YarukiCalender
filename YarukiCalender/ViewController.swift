@@ -12,6 +12,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     let date = Date()
     @IBOutlet private weak var collection: UICollectionView!
     var displayWidth: CGFloat = 0
+    let weekLabel: [String] = ["日", "月", "火", "水", "木", "金", "土"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 //    セルの数
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
-        switch (section) {
+        switch section {
         case 0:
             return 7
 
@@ -55,12 +56,22 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "data", for: indexPath)
-        
-        print(indexPath.item)
-        cell.backgroundColor = UIColor.red
 
-        let dateLabel = cell.contentView.viewWithTag(1) as? UILabel
-        dateLabel!.text = "aaaa"
+        switch indexPath.section {
+        case 0:
+            cell.backgroundColor = UIColor.blue
+            let week = cell.contentView.viewWithTag(1) as? UILabel
+            week!.text = weekLabel[indexPath.row]
+
+        case 1:
+            cell.backgroundColor = UIColor.red
+
+            let dateLabel = cell.contentView.viewWithTag(1) as? UILabel
+            dateLabel!.text = "aaaa"
+
+        default:
+            print("section error")
+        }
 
         return cell
     }
