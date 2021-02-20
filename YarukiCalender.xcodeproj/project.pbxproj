@@ -121,11 +121,11 @@
 				38AAF709258BB431001789E8 /* AppDelegate.swift */,
 				38AAF70B258BB431001789E8 /* SceneDelegate.swift */,
 				38AAF70D258BB431001789E8 /* ViewController.swift */,
+				382A4AE325E02969001E3CCF /* CalenderDateCollectionViewCell.swift */,
 				38AAF70F258BB431001789E8 /* Main.storyboard */,
 				38AAF712258BB433001789E8 /* Assets.xcassets */,
 				38AAF714258BB433001789E8 /* LaunchScreen.storyboard */,
 				38AAF717258BB433001789E8 /* Info.plist */,
-				382A4AE325E02969001E3CCF /* CalenderDateCollectionViewCell.swift */,
 			);
 			path = YarukiCalender;
 			sourceTree = "<group>";
