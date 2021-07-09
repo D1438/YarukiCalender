@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,45 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3u9-sm-B0p">
-                                <rect key="frame" x="0.0" y="94" width="390" height="716"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e4e-6A-R5b">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="data" id="uZt-t8-Djt" customClass="CalenderDateCollectionViewCell" customModule="YarukiCalender" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="crz-Qv-9ZL">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3i-Ee-eBu" userLabel="date">
-                                                    <rect key="frame" x="43" y="5" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="L3i-Ee-eBu" firstAttribute="centerX" secondItem="crz-Qv-9ZL" secondAttribute="centerX" id="Ral-ni-koD"/>
-                                                <constraint firstItem="L3i-Ee-eBu" firstAttribute="top" secondItem="crz-Qv-9ZL" secondAttribute="top" constant="5" id="mle-Bg-Bnf"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <connections>
-                                            <outlet property="date" destination="L3i-Ee-eBu" id="A9U-VV-mgi"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="kxS-P2-Se7" id="Rlr-49-K4w"/>
-                                    <outlet property="delegate" destination="kxS-P2-Se7" id="NCO-Un-OTG"/>
-                                </connections>
-                            </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLP-cn-bXr">
                                 <rect key="frame" x="0.0" y="44" width="390" height="50"/>
                                 <subviews>
@@ -89,29 +49,29 @@
                                     <constraint firstAttribute="trailing" secondItem="x4v-Xb-oSb" secondAttribute="trailing" constant="10" id="jsO-S8-2Lf"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ahv-aC-g2P" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="92" width="390" height="718"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r6S-MA-FeM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3u9-sm-B0p" firstAttribute="top" secondItem="OLP-cn-bXr" secondAttribute="bottom" id="4OV-kQ-lw8"/>
                             <constraint firstItem="OLP-cn-bXr" firstAttribute="leading" secondItem="r6S-MA-FeM" secondAttribute="leading" id="A33-5G-ZLH"/>
                             <constraint firstItem="OLP-cn-bXr" firstAttribute="top" secondItem="r6S-MA-FeM" secondAttribute="top" id="BJB-hF-p9r"/>
-                            <constraint firstItem="3u9-sm-B0p" firstAttribute="leading" secondItem="r6S-MA-FeM" secondAttribute="leading" id="Jgy-AL-HcJ"/>
-                            <constraint firstItem="3u9-sm-B0p" firstAttribute="bottom" secondItem="r6S-MA-FeM" secondAttribute="bottom" id="WO7-Yd-Teh"/>
-                            <constraint firstItem="3u9-sm-B0p" firstAttribute="trailing" secondItem="r6S-MA-FeM" secondAttribute="trailing" id="YH7-yN-qT4"/>
                             <constraint firstItem="r6S-MA-FeM" firstAttribute="trailing" secondItem="OLP-cn-bXr" secondAttribute="trailing" id="ewW-e4-t4C"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Oci-oh-Mbh"/>
                     <connections>
-                        <outlet property="collection" destination="3u9-sm-B0p" id="g0O-Qd-r5F"/>
                         <outlet property="nextMonthButton" destination="x4v-Xb-oSb" id="yra-7h-aHP"/>
                         <outlet property="preMonthButton" destination="ruC-5B-wVS" id="Axg-rn-Xx5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVK-Lq-iMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="25"/>
+            <point key="canvasLocation" x="673.84615384615381" y="24.881516587677723"/>
         </scene>
     </scenes>
     <resources>
