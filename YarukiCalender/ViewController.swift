@@ -11,8 +11,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     let date = Date()
     @IBOutlet private weak var collection: UICollectionView!
-    @IBOutlet weak let preMonthButton: UIButton!
-    @IBOutlet weak let nextMonthButton: UIButton!
+    @IBOutlet weak var preMonthButton: UIButton!
+    @IBOutlet weak var nextMonthButton: UIButton!
     var displayWidth: CGFloat = 0
     let weekLabel: [String] = ["日", "月", "火", "水", "木", "金", "土"]
 
