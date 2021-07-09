@@ -7,10 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     let date = Date()
     @IBOutlet private weak var collection: UICollectionView!
+    @IBOutlet weak let preMonthButton: UIButton!
+    @IBOutlet weak let nextMonthButton: UIButton!
     var displayWidth: CGFloat = 0
     let weekLabel: [String] = ["日", "月", "火", "水", "木", "金", "土"]
 
@@ -64,7 +66,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             week!.text = weekLabel[indexPath.row]
 
         case 1:
-            cell.backgroundColor = UIColor.red
+//            cell.backgroundColor = UIColor.red
+            cell.layer.borderColor = UIColor.black.cgColor
+            cell.layer.borderWidth = 1
 
             let dateLabel = cell.contentView.viewWithTag(1) as? UILabel
             dateLabel!.text = "aaaa"
