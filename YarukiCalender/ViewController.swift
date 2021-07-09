@@ -9,12 +9,12 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
-    let date = Date()
     @IBOutlet private weak var collection: UICollectionView!
-    @IBOutlet weak var preMonthButton: UIButton!
-    @IBOutlet weak var nextMonthButton: UIButton!
+    @IBOutlet private weak var preMonthButton: UIButton!
+    @IBOutlet private weak var nextMonthButton: UIButton!
     var displayWidth: CGFloat = 0
     let weekLabel: [String] = ["日", "月", "火", "水", "木", "金", "土"]
+    let calendar = CalendarPresenter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +23,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         displayWidth = UIScreen.main.bounds.width
 
         // Do any additional setup after loading the view.
-        let today = Calendar.current.startOfDay(for: date)
 
-        print(today)
-
+        calendar.getToday()
         collection.dataSource = self
         collection.delegate = self
 
@@ -44,9 +42,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
         switch section {
+//        週のセル数
         case 0:
             return 7
 
+//        日付のセル数
         case 1:
             return 35
 
@@ -60,12 +60,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "data", for: indexPath)
 
         switch indexPath.section {
+//        週のセル
         case 0:
             cell.backgroundColor = UIColor.blue
             let week = cell.contentView.viewWithTag(1) as? UILabel
             week!.text = weekLabel[indexPath.row]
 
         case 1:
+//            各日にちのセル
 //            cell.backgroundColor = UIColor.red
             cell.layer.borderColor = UIColor.black.cgColor
             cell.layer.borderWidth = 1
@@ -76,6 +78,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         default:
             print("section error")
         }
+
+//        枠をなくす
+        cell.layer.borderWidth = 0
 
         return cell
     }
